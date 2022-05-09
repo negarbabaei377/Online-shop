@@ -1,0 +1,27 @@
+.admin {
+  position: sticky;
+  top: 0;
+  height: 10rem;
+  background-color: #f6f6f76e;
+  border-bottom: 0.5px solid black;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 16px 0 rgb(195 195 195 / 74%);
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.5rem;
+      padding-right: 1rem;
+      &:hover{
+        color: #9789ff;
+      }
+
+    }
+  }
+}
