@@ -1,0 +1,23 @@
+
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+
+  .buttonHover {
+    font-size: 16px;
+    width: 11.5rem;
+    height: 4rem;
+    box-shadow: 0 0 16px 0 rgb(195 195 195 / 74%);
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+      background-color: #d7d2f9a1 !important;
+      border: 1px solid #9789ff !important;
+    }
+  }
+}
