@@ -1,0 +1,6 @@
+@import "assets/styles/mixins/font.mixin" ;
+
+@include font (IranSans-medium , "IRANSans(FaNum)" );
+@include font (IranSans-bold , "IRANSans(FaNum)_Bold" );
+
+@include font(IranSans-Bold , "IRANSans(FaNum)_Bold") ;
