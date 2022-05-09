@@ -1,10 +1,21 @@
+@import "assets/font/IRANSans.font";
+
 * , *::before , *::after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: IranSans-medium, serif;
 }
 
-ul {
-  list-style: none;
+html{
+  font-size: 62.5%;
+  min-height: 100vh;
+}
+body{
+  height: 100%;
+}
+.Toastify__toast-body {
+  font-family: IranSans-medium, serif;
+  font-size: 1.4rem;
 }
 
