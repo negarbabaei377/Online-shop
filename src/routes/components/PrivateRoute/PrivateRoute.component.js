@@ -6,26 +6,27 @@ import {Navigate} from "react-router"
 import {PATH} from "configs/path.config";
 
 const TargetPage = ({Component, Layout, hasLayout}) => {
-    const isLogin = localStorage.getItem(IS_LOGIN)
-    if(isLogin){
-        return (
-            hasLayout ? (
-                Layout === "User" ? (
-                    <UserLayout>
-                        <Component/>
-                    </UserLayout>
-                ) : (
-                    <AdminLayout>
-                        <Component/>
-                    </AdminLayout>
-                )
-            ) : (
-                <Component/>
-            )
-        );
-    }else{
-       <Navigate to={PATH.LOGIN} />
+    const isLogin = JSON.parse(localStorage.getItem(IS_LOGIN))
+    if (isLogin !== true) {
+        return <Navigate to={PATH.LOGIN}/>
     }
+    return (
+        hasLayout ? (
+            Layout === "User" ? (
+                <UserLayout>
+                    <Component/>
+                </UserLayout>
+            ) : (
+                <AdminLayout>
+                    <Component/>
+                </AdminLayout>
+            )
+        ) : (
+            <Component/>
+        )
+    );
+
+
 };
 
 
@@ -39,5 +40,5 @@ export const PrivateRoute = (props) => {
 };
 
 PrivateRoute.defaultProps = DEFAULT_PROPS;
-PrivateRoute.propTypes = PROPS_TYPES ;
+PrivateRoute.propTypes = PROPS_TYPES;
 
