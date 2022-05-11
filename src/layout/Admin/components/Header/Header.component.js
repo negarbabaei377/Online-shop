@@ -5,6 +5,7 @@ import {Button, ButtonGroup, Container} from "@material-ui/core";
 import style from './_Header.module.scss';
 import {useNavigate} from "react-router";
 import {LightTheme} from "assets/styles/themes/light/light.theme";
+import {IS_LOGIN} from "configs/variables.config";
 
 export const HeaderComponent = (props) => {
     const navigate = useNavigate()
@@ -18,12 +19,9 @@ export const HeaderComponent = (props) => {
                         <Button style={{backgroundColor: LightTheme.palette.button , fontSize:"1.3rem" , marginRight:"0.1rem"}} onClick={()=>navigate(PATH.PRICEQUANTITY)}>موجودی و قیمت ها</Button>
                         <Button style={{backgroundColor: LightTheme.palette.button, fontSize:"1.3rem" , marginRight:"0.1rem"}}onClick={()=>navigate(PATH.ORDERS)}>سفارش ها</Button>
                     </ButtonGroup>
-                    <div>
+                    <div className={style.headerButtons}>
                         <Link to={PATH.HOME}>بازگشت به سایت</Link>
-                        <button onClick={()=> {
-                            navigate()
-
-                        }}>خروج</button>
+                        <Link to={PATH.HOME} onClick={()=>localStorage.setItem(IS_LOGIN , "false")}>خروج</Link>
                     </div>
                 </div>
             </Container>
