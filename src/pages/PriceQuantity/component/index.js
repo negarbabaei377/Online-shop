@@ -1,1 +1,1 @@
-export {StickyHeadTable} from './Table/Table.component'
+export {PriceQuantityComponent} from './PriceQuantityTable/PriceQuantityTable.component'

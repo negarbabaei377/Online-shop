@@ -1,8 +1,8 @@
 import React from 'react';
 import style from './_PriceQuantity.module.scss'
 import {Container} from "@mui/material";
-import {StickyHeadTable} from "./component/index";
 import {LightTheme} from "assets/styles/themes/light/light.theme";
+import {PriceQuantityComponent} from "./component";
 
 export const PriceQuantityPage = (props) => {
     return (
@@ -15,7 +15,7 @@ export const PriceQuantityPage = (props) => {
                         style={{backgroundColor: LightTheme.palette.button}}>ذخیره
                     </button>
                 </div>
-                <StickyHeadTable/>
+                <PriceQuantityComponent/>
             </Container>
         </div>
     );
