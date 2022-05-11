@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './_ProductManagment.module.scss'
 import {Container} from "@mui/material";
-import {StickyHeadTable} from "./component/index";
+import {ProductManagementTable} from './component'
 import {LightTheme} from "assets/styles/themes/light/light.theme";
 
 export const ProductManagmentPage = (props) => {
@@ -15,7 +15,7 @@ export const ProductManagmentPage = (props) => {
                         style={{backgroundColor: LightTheme.palette.button}}>افزودن کالا
                     </button>
                 </div>
-                <StickyHeadTable/>
+                <ProductManagementTable/>
             </Container>
         </div>
     );
