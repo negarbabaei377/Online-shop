@@ -18,6 +18,8 @@
     "formik": "^2.2.9",
     "helmet": "^5.0.2",
     "iconify": "^1.4.0",
+    "jalali-moment": "^3.3.11",
+    "moment": "^2.29.3",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
