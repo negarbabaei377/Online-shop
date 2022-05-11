@@ -1,5 +1,5 @@
 import http from "service/http.service";
-import {LOGIN} from "../configs/endpoint.config";
+import {LOGIN} from "configs/endpoint.config";
 
 export const loginApi = async(data) =>{
     try {
