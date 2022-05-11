@@ -1,20 +1,31 @@
 import axios from "axios";
 import {toast} from 'react-toastify';
+import {IS_LOGIN, TOKEN} from "configs/variables.config";
+import {LOGIN, WHOAMI} from "configs/endpoint.config";
+import {PATH} from 'configs/path.config'
 
 class Http {
     constructor() {
         axios.defaults.baseURL = "http://localhost:3002"
         axios.interceptors.request.use((config) => {
+            const token = localStorage.getItem(TOKEN)
+            if(token !== undefined && token !== ""  && config.url !== LOGIN && config.url !== WHOAMI ){
+                config.headers['token'] = `${token}`
+            }
             return config
         }, (error) => {
-            toast.error(error.response.data)
+            return Promise.reject(error.response.data)
         })
         axios.interceptors.response.use((response) => {
             return response
-
         }, (error) => {
-            toast.error(error.response.data)
-
+            if(error.response.status === 401){
+                localStorage.removeItem(TOKEN)
+                localStorage.setItem(IS_LOGIN , "false")
+                window.location.href = PATH.LOGIN
+            }else{
+                toast.error(error.response.data)
+            }
         })
     }
 
