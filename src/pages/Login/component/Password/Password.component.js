@@ -7,7 +7,7 @@ export const PasswordComponent = (props) => {
         <TextField
             style={{width: '50%', marginTop: "1rem"}}
             type="password"
-            id="outlined-basic"
+            id="password"
             name="password"
             label="رمز عبور"
             value={props.value}

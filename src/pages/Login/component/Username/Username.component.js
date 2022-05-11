@@ -6,7 +6,7 @@ export const UsernameComponent = (props) => {
         <TextField
             style={{width: '50%', marginTop: "1rem"}}
             type="username"
-            id="outlined-basic"
+            id="username"
             name="username"
             label="نام کاربری"
             value={props.value}
