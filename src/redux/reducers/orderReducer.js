@@ -1,16 +1,14 @@
-import {orderAction} from "../actions/orderAction";
+import {ORDERS_GET_ORDERS} from "configs/variables.config";
 
 const initialState = {
-    order : []
+    orders:[]
 }
 
-export const orderReducer = (state = initialState , action) =>{
-    switch (action.type) {
-        case("x") :
-            return {...state , order : action.payload}
-        case("y") :
-            return {...state , order: action.payload}
-        default :
+export const orderReducer =(state=initialState , action)=>{
+    switch (action.type){
+        case(ORDERS_GET_ORDERS):
+            return {...state , orders : action.payload}
+        default:
             return state
     }
 }
