@@ -9,7 +9,7 @@ import {useNavigate} from "react-router";
 import {PATH} from "configs/path.config";
 import {PasswordComponent, UsernameComponent} from "./component/index";
 import {Button} from "@material-ui/core";
-import {LightTheme} from "../../assets/styles/themes/light/light.theme";
+import {LightTheme} from "assets/styles/themes/light/light.theme";
 
 
 
