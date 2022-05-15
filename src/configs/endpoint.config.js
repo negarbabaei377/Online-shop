@@ -3,3 +3,4 @@ export const PRODUCT = "/products" ;
 export const CATEGORY = "/category" ;
 export const ORDERS = "/orders";
 export const WHOAMI = "/whoami";
+export const UPLOAD = "/upload";
