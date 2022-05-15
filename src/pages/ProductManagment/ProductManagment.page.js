@@ -1,8 +1,7 @@
 import React from 'react';
 import style from './_ProductManagment.module.scss'
 import {Container} from "@mui/material";
-import {ProductManagementTable} from './component'
-import {LightTheme} from "assets/styles/themes/light/light.theme";
+import {AddProductComponent, ProductManagementTable} from './component'
 
 export const ProductManagmentPage = (props) => {
     return (
@@ -10,10 +9,7 @@ export const ProductManagmentPage = (props) => {
             <Container>
                 <div className={style.title}>
                     <h1>مدیریت کالاها</h1>
-                    <button
-                        className={style.buttonHover}
-                        style={{backgroundColor: LightTheme.palette.button}}>افزودن کالا
-                    </button>
+                    <AddProductComponent/>
                 </div>
                 <ProductManagementTable/>
             </Container>
