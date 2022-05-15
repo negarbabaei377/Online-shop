@@ -2,7 +2,7 @@ import React from 'react';
 import style from './_PriceQuantity.module.scss'
 import {Container} from "@mui/material";
 import {LightTheme} from "assets/styles/themes/light/light.theme";
-import {PriceQuantityComponent} from "./component";
+import {PriceQuantityComponent} from './component'
 
 export const PriceQuantityPage = (props) => {
     return (
