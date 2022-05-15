@@ -51,9 +51,8 @@ export function ProductManagementTable() {
         dispatch(getCategory())
     }, [])
 
-    const productStore = useSelector(state => state.productState).product
-    const categoryStore = useSelector(state => state.categoryState).category
-
+    const productStore = useSelector(state => state.productState.product)
+    const categoryStore = useSelector(state => state.categoryState.category)
 
     const handleChangePage = (event, newPage) => {
         setPage(newPage);
@@ -97,7 +96,7 @@ export function ProductManagementTable() {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {rows
+                        {rows.reverse()
                             .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                             .map((product) => {
                                 return (
@@ -119,7 +118,7 @@ export function ProductManagementTable() {
                                         <TableCell style={{fontSize: "1.3rem"}}
                                                    align={"center"}>
                                             {categoryStore.length !==0 && categoryStore.filter((item)=>{
-                                                 return item.id===product.category
+                                                 return item.id==product.category
                                             })[0].name}
                                         </TableCell>
                                         <TableCell style={{fontSize: "1.3rem"}}
