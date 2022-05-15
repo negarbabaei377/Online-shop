@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import style from './_Orders.module.scss'
 import {Container} from "@mui/material";
 import {LightTheme} from "assets/styles/themes/light/light.theme";
