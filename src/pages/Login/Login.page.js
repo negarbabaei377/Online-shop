@@ -37,8 +37,7 @@ export const LoginPage = () => {
                     localStorage.setItem(IS_LOGIN , "true")
                     navigate(`${PATH.DASHBOARD}/${PATH.ORDERS}`)
                 }
-            })
-
+            }).catch(error=>Promise.reject(error))
         },
         validationSchema: validationSchema,
     })
