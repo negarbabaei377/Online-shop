@@ -14,6 +14,7 @@ import {getCategory} from "redux/actions/categoryAction";
 import style from '../../_ProductManagment.module.scss'
 import {REACT_APP_BASE_URL} from "configs/variables.config";
 import { Icon } from '@iconify/react';
+import {EditProductComponent} from "../index";
 
 const columns = [
     {id: 'image', label: 'تصویر', width: "10%" , align: 'center'},
@@ -124,7 +125,7 @@ export function ProductManagementTable() {
                                         <TableCell style={{fontSize: "1.3rem"}}
                                                    align={"center"}>
                                             <Icon icon="fluent:delete-48-filled" color="#dc2626" width="25" />
-                                            <Icon icon="fluent:edit-16-filled" color="#495ed3" width="25" />
+                                            <EditProductComponent id={product.id}/>
                                         </TableCell>
                                     </TableRow>
                                 );
