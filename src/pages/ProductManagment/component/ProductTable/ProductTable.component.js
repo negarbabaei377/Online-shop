@@ -13,8 +13,7 @@ import {getProduct} from "redux/actions/productAction";
 import {getCategory} from "redux/actions/categoryAction";
 import style from '../../_ProductManagment.module.scss'
 import {REACT_APP_BASE_URL} from "configs/variables.config";
-import { Icon } from '@iconify/react';
-import {EditProductComponent} from "../index";
+import {EditProductComponent, RemoveProductComponent} from "../index";
 
 const columns = [
     {id: 'image', label: 'تصویر', width: "10%" , align: 'center'},
@@ -122,9 +121,9 @@ export function ProductManagementTable() {
                                                  return item.id==product.category
                                             })[0].name}
                                         </TableCell>
-                                        <TableCell style={{fontSize: "1.3rem"}}
+                                        <TableCell style={{fontSize: "1.3rem" , display:"flex" , alignItems:"center" , justifyContent:"space-evenly"}}
                                                    align={"center"}>
-                                            <Icon icon="fluent:delete-48-filled" color="#dc2626" width="25" />
+                                            <RemoveProductComponent id={product.id}/>
                                             <EditProductComponent id={product.id}/>
                                         </TableCell>
                                     </TableRow>
