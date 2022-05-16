@@ -13,7 +13,7 @@ import {LightTheme} from "assets/styles/themes/light/light.theme";
 import {useFormik} from "formik";
 import {TextField} from "@material-ui/core";
 import * as yup from 'yup'
-import {useState} from "react";
+import {useRef, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {CKEditor} from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
@@ -110,13 +110,20 @@ export function AddProductComponent() {
     })
 
     const validationSchema = yup.object({
-        count: yup.string("تعداد موجودی کالا را وارد کنید!").required("این فیلد الزامی است !"),
+        count: yup.number("تعداد موجودی کالا را وارد کنید!").required("این فیلد الزامی است !").min(1 , "موجودی کالا نباید کمتر از یک عدد باشد"),
         price: yup.string("قیمت کالا را وارد کنید !").required("این فیلد الزامی است !").min(3, "قیمت کالا نباید کمتر از سه رقم باشد !"),
         name: yup.string("نام کالا را وارد کنید!").required("این فیلد الزامی است !"),
     })
-
+    let formRef = useRef()
     const dispatch = useDispatch()
-    const onsubmit = (values) => {
+    const formReset = (values, resetForm) => {
+        resetForm({values: ''})
+        setThumbnail([])
+        setDescription('')
+        setGalleryImage([])
+        setSelectedOption('')
+    }
+    const onsubmit = (values, {resetForm}) => {
         const data = new FormData()
         data.append("name", values.name)
         data.append("price", values.price)
@@ -130,12 +137,14 @@ export function AddProductComponent() {
             toast.error("دسته بندی کالای خود را انتخاب کنید")
         } else {
             if (serverData.thumbnail === "") {
-                toast.error("عکس شاخص کالای خود را آپلود کنید")
+                toast.error("تصویر شاخص کالای خود را آپلود کنید")
             } else {
                 postProduct(serverData).then(res => {
                     toast.success("کالای شما با موفقیت افزوده شد")
                     dispatch(getProduct())
+                    formReset(values, resetForm)
                     setOpen(false);
+
                 }).catch(error => {
                     toast.error("مشکلی در افزودن کالا به وجود آمده است لطفا مجددا تلاش کنید !")
                 })
@@ -160,7 +169,6 @@ export function AddProductComponent() {
                 onClick={handleClickOpen}
                 style={{backgroundColor: LightTheme.palette.button}}>افزودن کالا
             </button>
-            <form onSubmit={formik.handleSubmit}>
                 <BootstrapDialog
                     fullWidth={true}
                     onClose={handleClose}
@@ -173,6 +181,7 @@ export function AddProductComponent() {
                     </BootstrapDialogTitle>
                     <DialogContent dividers>
                         <div>
+                                <form onSubmit={formik.handleSubmit} ref={(el) => formRef = el}>
                             <div>
                                 <TextField
                                     style={{width: '100%'}}
@@ -204,7 +213,7 @@ export function AddProductComponent() {
                                 <span>توضیحات</span>
                                 <CKEditor
                                     editor={ClassicEditor}
-                                    data=""
+                                    data={description}
                                     onBlur={(event, editor) => {
                                         setDescription(editor.getData())
                                     }}
@@ -258,7 +267,7 @@ export function AddProductComponent() {
                             <div className={style.inputStyle}>
                                 <TextField
                                     style={{width: '100%'}}
-                                    type="count"
+                                    type="number"
                                     id="count"
                                     name="count"
                                     label="موجودی کالا"
@@ -331,19 +340,19 @@ export function AddProductComponent() {
                                     </div>
                                 </div>
                             </div>
+                                </form>
                         </div>
                     </DialogContent>
-                    <DialogActions style={{padding:"1rem"}}>
+                    <DialogActions style={{padding: "1rem"}}>
                         <Button
                             className={style.buttonHover}
                             type="submit"
-                            style={{backgroundColor: LightTheme.palette.button , color:"black" , fontSize:"1.2rem"}}
+                            style={{backgroundColor: LightTheme.palette.button, color: "black", fontSize: "1.2rem"}}
                             onClick={formik.handleSubmit}>
                             افزودن
                         </Button>
                     </DialogActions>
                 </BootstrapDialog>
-            </form>
         </div>
     )
 
