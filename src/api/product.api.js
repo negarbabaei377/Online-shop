@@ -19,3 +19,12 @@ export const postProduct = async (data)=>{
         return Promise.reject(error)
     }
 }
+
+export const putProduct = async(id , data)=>{
+    try{
+        const response = await http.put(`${PRODUCT}/${id}` , data)
+        return response
+    }catch(error){
+        return Promise.reject(error)
+    }
+}
