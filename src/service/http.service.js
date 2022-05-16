@@ -9,7 +9,7 @@ class Http {
         axios.defaults.baseURL = "http://localhost:3002"
         axios.interceptors.request.use((config) => {
             const token = localStorage.getItem(TOKEN)
-            if(token !== undefined && token !== ""  && config.url !== LOGIN && config.url !== WHOAMI ){
+            if (token !== undefined && token !== "" && config.url !== LOGIN && config.url !== WHOAMI) {
                 config.headers['token'] = `${token}`
             }
             return config
@@ -19,11 +19,11 @@ class Http {
         axios.interceptors.response.use((response) => {
             return response
         }, (error) => {
-            if(error.response.status === 401){
+            if (error.response.status === 401) {
                 localStorage.removeItem(TOKEN)
-                localStorage.setItem(IS_LOGIN , "false")
+                localStorage.setItem(IS_LOGIN, "false")
                 window.location.href = PATH.LOGIN
-            }else{
+            } else {
                 toast.error(error.response.data)
             }
         })
@@ -39,6 +39,10 @@ class Http {
 
     put(url, data, config) {
         return axios.put(url, data, config)
+    }
+
+    delete(url, config) {
+        return axios.delete(url, config)
     }
 }
 
