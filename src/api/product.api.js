@@ -28,3 +28,12 @@ export const putProduct = async(id , data)=>{
         return Promise.reject(error)
     }
 }
+
+export const deleteProduct = async (id)=>{
+    try{
+        const response = await http.delete(`${PRODUCT}/${id}`)
+        return response
+    }catch(error){
+        return Promise.reject(error)
+    }
+}
