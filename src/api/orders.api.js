@@ -9,3 +9,13 @@ export const OrdersApi = async ()=>{
         return Promise.reject(error)
     }
 }
+
+export const putOrder = async (id , data)=>{
+    try{
+        const response = await http.put(`${ORDERS}/${id}` ,  data)
+        return response
+    }catch(error){
+        return Promise.reject(error)
+    }
+
+}
