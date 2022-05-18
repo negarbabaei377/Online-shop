@@ -11,6 +11,7 @@ import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {getOrders} from "redux/actions/orderAction";
 import moment from "jalali-moment";
+import {HoldOrdersComponent}from "../index";
 
 const columns = [
     {
@@ -121,7 +122,7 @@ export function OrderTableComponent(props) {
                                         </TableCell>
                                         <TableCell style={{fontSize: "1.3rem"}}
                                                    align={"center"}>
-                                            {/*<CheckOrderComponent id={order.id}/>*/}
+                                            <HoldOrdersComponent id={order.id}/>
                                         </TableCell>
                                     </TableRow>
                                 );
