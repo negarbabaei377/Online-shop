@@ -6,3 +6,33 @@
   margin-bottom: 2rem;
 
 }
+
+.infoOrder{
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+  div{
+    margin-bottom: 0.5rem;
+  }
+}
+
+.totalPrice{
+  margin-top: 1.5rem;
+  margin-right: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.buttonLink{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.deliveredDate{
+  display: flex;
+  font-size: 1.4rem;
+  margin: 1rem  1.5rem;
+
+}
