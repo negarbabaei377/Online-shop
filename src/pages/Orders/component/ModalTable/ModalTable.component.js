@@ -28,16 +28,16 @@ const StyledTableRow = styled(TableRow)(({theme}) => ({
     },
 }));
 
-function createData(name, quantity, price , id) {
-    return {name, quantity, price , id};
+function createData(name, quantity, price , id , deliveredAt) {
+    return {name, quantity, price , id , deliveredAt};
 }
 
 export function ModalTableComponent(props) {
     const orderData = useSelector(state => state.orderState.orders)
     const filterOrder = orderData.filter(item => item.id === props.id)[0]
     const rows = filterOrder.orderItems && filterOrder.orderItems.map(dataOrder => {
-        return createData(dataOrder.name, dataOrder.quantity, dataOrder.price , dataOrder.id)
-    })
+        return createData(dataOrder.name, dataOrder.quantity, dataOrder.price , dataOrder.id , dataOrder.deliveredAt)
+    }).sort((b , a)=>(b.deliveredAt - a.deliveredAt))
     return (
         <TableContainer component={Paper}
                         sx={{width: "100%"}}>
