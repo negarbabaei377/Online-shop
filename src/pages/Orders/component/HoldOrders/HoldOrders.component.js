@@ -71,8 +71,7 @@ export function HoldOrdersComponent(props) {
 
     const dispatch = useDispatch()
     const uploadHandler=()=>{
-        const today = new Date();
-        putOrder(props.id , {...filterOrder , orderStatus : 1 , deliveredAt: today.getFullYear()+'/'+(today.getMonth()+1)+'-\/'+today.getDate()})
+        putOrder(props.id , {...filterOrder , orderStatus : 1 , deliveredAt:Date.now() })
             .then(res=>{
                 dispatch(getOrders())
                 setOpen(false);
