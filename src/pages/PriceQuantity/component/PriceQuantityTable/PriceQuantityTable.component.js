@@ -71,7 +71,7 @@ export function PriceQuantityComponent() {
         const data = productStore.filter(item => item.id === product.id)[0]
         const serverData = {...data, [name]: newValue}
         if (value.newValue.includes(",") === true) {
-            value.newValue.replace(",", "")
+            value.newValue.replaceAll(",", "")
         }
         putProduct(product.id, serverData).then(res => {
             toast.success("کالای مورد نظر با موفقیت ویرایش شد")
