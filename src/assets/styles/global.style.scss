@@ -19,3 +19,26 @@ body{
   font-size: 1.4rem;
 }
 
+.swiper-button-next:after, .swiper-button-prev:after{
+  font-family: swiper-icons, serif !important;
+}
+.swiper-button-next, .swiper-button-prev{
+color: var(--swiper-navigation-color,var(--swiper-theme-color));
+}
+
+::-webkit-scrollbar{
+  width: 18px;
+}
+::-webkit-scrollbar-track{
+  background-color: transparent;
+  border-radius: 10px;
+  width: 20px;
+}
+::-webkit-scrollbar-thumb{
+  background-color:#b4aafc;
+  border: 5px solid transparent;
+  border-radius: 10px;
+  background-clip: content-box;
+
+}
+
