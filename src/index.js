@@ -12,6 +12,7 @@ import {prefixer} from "stylis";
 import {CacheProvider} from "@emotion/react";
 import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import "swiper/css/bundle";
 
 const cacheRtl = createCache({
     key : "muirtl" ,
