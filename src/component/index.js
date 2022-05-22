@@ -1,4 +1,3 @@
-export {ButtonComponent} from './Button/Button.component' ;
 export {ProductCardComponent} from './ProductCard/ProductCard.component';
-export {SliderComponent} from './Slider/Slider.component'
-
+export {ProductSliderComponent} from './ProductSlider/ProductSlider.component'
+export {MainSliderComponent} from './MainSlider/MainSlider.component'
