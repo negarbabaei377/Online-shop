@@ -40,13 +40,13 @@ export const HomePage = () => {
                 {group1 && group1.map(category => {
                     const product = productData && productData.filter(item => item.category == category.id)
                     return (
-                        <>
+                        <div key={category.id}>
                             <div className={style.titleStyle}>
                                 <span className={style.title}>{category.name}</span>
                                 <span className={style.br}></span>
                             </div>
                             <ProductSliderComponent productData={product}/>
-                        </>
+                        </div>
                     )
                 })}
             </Container>
@@ -56,16 +56,16 @@ export const HomePage = () => {
                 </div>
             </div>
             <Container>
-                {group2 && group2.map(category => {
+                {group2 && group2.map((category) => {
                     const product = productData && productData.filter(item => item.category == category.id)
                     return (
-                        <>
-                            <div className={style.titleStyle}>
+                        <div key={category.id}>
+                            <div className={style.titleStyle} >
                                 <span className={style.title}>{category.name}</span>
                                 <span className={style.br}></span>
                             </div>
                             <ProductSliderComponent productData={product}/>
-                        </>
+                        </div>
                     )
                 })}
             </Container>
