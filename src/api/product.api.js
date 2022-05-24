@@ -37,3 +37,12 @@ export const deleteProduct = async (id)=>{
         return Promise.reject(error)
     }
 }
+
+export const getSingleProduct = async (id)=>{
+    try{
+        const response = await http.get(`${PRODUCT}?id=${id}`)
+        return response
+    }catch(error){
+        return Promise.reject(error)
+    }
+}
