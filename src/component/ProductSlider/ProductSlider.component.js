@@ -26,11 +26,13 @@ export function ProductSliderComponent(props) {
             >
                 {props.productData && props.productData.map((item) => {
                     return (
-                        <SwiperSlide>
+                        <SwiperSlide key={item.id}>
                             <ProductCardComponent
                                 image={item.thumbnail}
                                 price={item.price}
                                 name={item.name}
+                                id={item.id}
+                                count={item.count}
                             />
                         </SwiperSlide>
                     )
