@@ -1,0 +1,1 @@
+export {SliderImageComponent} from './SliderImage/SliderImage.component'
