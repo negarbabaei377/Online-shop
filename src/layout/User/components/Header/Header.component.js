@@ -32,12 +32,12 @@ export const HeaderComponent = (props) => {
                     </div>
                     <div className={style.leftHead}>
                         <Link style={{backgroundColor: LightTheme.palette.button}}
-                              to={PATH.CATEGORIES}>دسته بندی</Link>
-                        <Link style={{backgroundColor: LightTheme.palette.button}}
                               to={PATH.LOGIN}>ورود</Link>
+                        <Link style={{backgroundColor: LightTheme.palette.button}}
+                              to={PATH.CATEGORIES}>دسته بندی</Link>
                         <IconButton aria-label="cart"
                                     className={style.cartIcon}
-                                    onClick={()=>navigate(PATH.CART)}
+                                    onClick={() => navigate(PATH.CART)}
                         >
                             <StyledBadge badgeContent={1}
                                          color="secondary"
