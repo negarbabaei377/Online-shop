@@ -3,10 +3,12 @@ import {BrowserRouter, Route , Routes} from "react-router-dom";
 import {PATH} from "configs/path.config";
 import {PrivateRoute, ProtectedRoute, PublicRoute} from "./components";
 import * as Pages from 'pages'
+import {ScrollToTopComponent} from 'component'
 
 export const AppRoute = () => {
     return (
         <BrowserRouter>
+            <ScrollToTopComponent>
             <Routes>
                 <Route path={PATH.HOME} element={<PublicRoute Component={Pages.HomePage}/>} />
                 <Route path={PATH.CART} element={<PublicRoute Component={Pages.CartPage}/>} />
@@ -21,6 +23,7 @@ export const AppRoute = () => {
                 <Route path={PATH.NOTFOUND} element={<PublicRoute Component={Pages.NotfoundPage}/>} />
                 <Route path={PATH.PRODUCT} element={<PublicRoute Component={Pages.ProductPage}/>} />
             </Routes>
+            </ScrollToTopComponent>
         </BrowserRouter>
     );
 };
