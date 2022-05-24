@@ -41,4 +41,15 @@ color: var(--swiper-navigation-color,var(--swiper-theme-color));
   background-clip: content-box;
 
 }
+.react-numeric-input{
+  b{
+    border-width: 14px !important;
+    background-color: #d1cbff !important;
+    i{
+      background-color: white !important;
+      cursor: pointer;
+    }
+  }
+}
+
 
