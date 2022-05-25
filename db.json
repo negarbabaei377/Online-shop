@@ -464,7 +464,7 @@
     {
       "name": "ساعت مچی بند سیلیکونی پیکاچو",
       "price": "89000",
-      "count": "20",
+      "count": "0",
       "category": "10",
       "description": "<ul><li><strong>فرم صفحه </strong>:گرد</li><li><strong>جنس بدنه : </strong>فلز،استیل</li><li><strong>جنس بند: </strong>سیلیکونی</li><li><strong>نحوه بسته شدن بند :&nbsp;</strong>سگکی</li><li><strong>مناسب برای:</strong>روزمره<strong>،</strong>مهمانی</li></ul>",
       "thumbnail": "809a3dfa6f7d8a28a1656a4283a62a6b",
@@ -475,13 +475,134 @@
     {
       "name": "ساعت مچی کیو اند کیو طرح موازی",
       "price": "349000",
-      "count": "26",
+      "count": "1",
       "category": "10",
       "description": "<h3><strong>ساعت مچی</strong>: از برند Q&amp;Q</h3><ul><li><strong>فرم صفحه </strong>:گرد</li><li><strong>جنس بدنه : استیل، ضد آب</strong></li><li><strong>جنس بند: </strong>سیلیکونی</li><li><strong>نحوه بسته شدن بند :&nbsp;</strong>سگکی یا کمربندی</li><li><strong>مناسب برای:</strong>روزمره</li></ul>",
       "thumbnail": "ad6c0f848b047b451212b40639daa32a",
       "galleryImage": "ce85e227397aaa946a5d5a336861df5e,9f8d65a5ade063f652294b45c77095b1,4181694c7e67823cde820dfcbd460da8,7053a3df4d1904c6ff8b0e3f5d99db56,33da03da7789d534683c4aebcb4986d3,e19d526d4ffa8cd759f144a8de9e6052,eac004a2b2354be3a1b994ee56a7962c",
       "createdAt": 1653206888225,
       "id": 126
+    },
+    {
+      "name": "مینی کیف تریسی",
+      "price": "95000",
+      "count": "4",
+      "category": "3",
+      "description": "<ul><li><strong>کیف زنانه&nbsp;:</strong> با استایل روزمره</li><li><strong>جنس :</strong>چرم مصنوعی</li><li><strong>طرح : </strong>ساده</li><li><strong>جنس آستر :</strong> چرم</li><li><strong>مدل و تعداد جیب : </strong>یک خانه</li><li><strong>مدل و تعداد بند :</strong> دارای بند دوشی از چرم و زنجیر</li><li><strong>نحوه بسته‌شدن :</strong> به وسیله مگنتی</li><li><strong>کاربرد :</strong>روزمره</li></ul>",
+      "thumbnail": "e901f07b1adc9b947693c05da5307e22",
+      "galleryImage": "dad5b975beebd6a3f62e109688dd1376,78493f7b15ba37ae872a62dce3ca00e3,31e22695a27af8045eb60e5023d47270,591e4ec22101c7adf75ed47df746391c,c827b839c89bd3c51eb40fc1c1992996,553e01b75b96c1643c65f42a0d49d4a6",
+      "createdAt": 1653491870335,
+      "id": 127
+    },
+    {
+      "name": "مینی بگ اریک",
+      "price": "115000",
+      "count": "7",
+      "category": "3",
+      "description": "<ul><li><strong>کیف زنانه&nbsp;:</strong> با استایل روزمره، استایل مینیمال</li><li><strong>جنس :</strong>چرم مصنوعی</li><li><strong>طرح : </strong>ساده، قفل سگک دار</li><li><strong>جنس آستر :</strong> چرم</li><li><strong>مدل و تعداد جیب : </strong>یک خانه</li><li><strong>مدل و تعداد بند :</strong> دارای بند دوشی از چرم و زنجیر</li><li><strong>کاربرد :</strong>روزمره</li></ul>",
+      "thumbnail": "892aaeff85897f2b2a202fed4ee3335d",
+      "galleryImage": "bc665eb6559b45c9a1b976775ef4cfec,7b9cc80bd0ef5d4a5a6a79e1ad0446ba,da29a0ac153b7cae32d932774575a726,65283416718e7c9b03392c8f0f7ca6d6,e5eadeca6e43a0db3b031ba3d7b6f7fe,08170404689f1a661ee3e47fa88e43fc,e9a785d0d37c13b1360d47772ead880d,d04064e858f4090f378888ed7c223218",
+      "createdAt": 1653492043978,
+      "id": 128
+    },
+    {
+      "name": "مینی کیف پالوما",
+      "price": "82000",
+      "count": "12",
+      "category": "3",
+      "description": "<ul><li><strong>کیف زنانه&nbsp;:</strong> با استایل روزمره</li><li><strong>جنس :</strong>چرم مصنوعی</li><li><strong>طرح : </strong>دوخت دار مربعی</li><li><strong>جنس آستر :</strong> پارچه</li><li><strong>مدل و تعداد جیب :&nbsp; </strong>یک خانه</li><li><strong>مدل و تعداد بند :</strong> دارای بند دستی و دوشی ترکیب زنجیر و چرم</li><li><strong>نحوه بسته‌شدن :</strong> به وسیله قفل فشاری</li><li><strong>کاربرد :</strong>روزمره</li></ul>",
+      "thumbnail": "578fc344b860a26b1933afaf98bfadc3",
+      "galleryImage": "74de83dcbe90506d5b9439e2c7878044,3a5da9191253545ee219b1c2d648eba3,410e3016b55c85d8a6a3cbc19e7ce4a6,0c24139a34d0024c7c410a6d86b14093,11618aacfc5c9ba12b8ea90dabbfe39a",
+      "createdAt": 1653492181619,
+      "id": 129
+    },
+    {
+      "name": "مینی کیف کت",
+      "price": "170000",
+      "count": "6",
+      "category": "3",
+      "description": "<ul><li><strong>کیف زنانه&nbsp;:</strong> با استایل روزمره</li><li><strong>جنس :</strong>چرم</li><li><strong>طرح : </strong>کروکو</li><li><strong>جنس آستر :</strong> پارچه</li><li><strong>مدل و تعداد جیب :&nbsp; </strong>یک خانه و یک جیب در داخل کیف</li><li><strong>مدل و تعداد بند :</strong> دارای بند دوشی از ترکیب فلز و چرم</li><li><strong>نحوه بسته‌شدن :</strong> به وسیله مگنتی</li><li><strong>کاربرد :</strong>روزمره</li></ul>",
+      "thumbnail": "0dc8620fd92413fa2ed253ddb511ed93",
+      "galleryImage": "a077f4874933272f2c72e9c95f210b59,4a96b81f2bf71b84b6fe1bf92ed41b80,8f87c2d9e73714efbc7fca477fce798b,3f7ca80b756503e9bfc9a4be3ec09e12,3c678b0efb6143984d4ce50fbdbe2e9b,4375d42840d7c51a5e6d4059369cb218",
+      "createdAt": 1653492518040,
+      "id": 130
+    },
+    {
+      "name": "مینی بگ مرواریدی",
+      "price": "85000",
+      "count": "7",
+      "category": "3",
+      "description": "<ul><li><strong>کیف کمری&nbsp; و دوشی :</strong>&nbsp;با استایل روزمره</li><li><strong>جنس :</strong>&nbsp;چرم مصنوعی (PU)</li><li><strong>طرح : چرم گلدوزی شده به همراه دسته مرواریدی</strong></li><li><strong>جنس آستر :</strong>&nbsp;–</li><li><strong>مدل و تعداد جیب :&nbsp; </strong>تک جا</li><li><strong>مدل و تعداد بند :</strong>&nbsp; بند دوشی هر دو از جنس فلز</li><li><strong>نحوه بسته‌شدن :</strong>&nbsp; مگنت</li><li><strong>کاربرد :</strong>روزمره/دستی/دوشی</li></ul>",
+      "thumbnail": "a936d7ec6a390797aaaae99dff4e1436",
+      "galleryImage": "d40d32156fd15453b91ff0ab7a97103e,a703864aa6b90ef9c2fd8b1becf12cf1,8156d34b7eebc79b57957fe55e4a4222,dab4cf31cec353a673754ad3012342fe",
+      "createdAt": 1653492858746,
+      "id": 131
+    },
+    {
+      "name": "مینی بگ آدریانا",
+      "price": "55000",
+      "count": "4",
+      "category": "3",
+      "description": "<ul><li><strong>کیف :</strong>&nbsp;با استایل روزمره</li><li><strong>جنس :</strong>&nbsp; چرم مصنوعی</li><li><strong>طرح</strong>:ساده</li><li><strong>جنس آستر : </strong>پارچه ای</li><li><strong>مدل و تعداد بند :</strong> یک بند زنجیری</li><li><strong>نحوه بسته‌شدن :</strong> دکمه مگنتی</li><li><strong>کاربرد :</strong>روزمره</li></ul>",
+      "thumbnail": "6b2ceb5296fe654589d0bfc06dde5016",
+      "galleryImage": "6c1b34f37e886ee819fc68ff1eb93853,3bfaaa4db4c9df3adcd6c55f63db744e,55519894863e4cb0df6dbe8e96c03f15,051776cf6a2ec3199c21ab8f6950c792,02e6b185e0656094e05172f1e2d75dd5",
+      "createdAt": 1653493002180,
+      "id": 132
+    },
+    {
+      "name": "ست کیف و کمربند مردانه سرجینو",
+      "price": "290000",
+      "count": "12",
+      "category": "7",
+      "description": "<p><strong>ست چرمی مردانه:</strong>با استایل روزمره</p><p><strong>اقلام موجود در ست: </strong>کیف پول،کمربند، جا سوئیچی</p><p><strong>جنس:&nbsp;</strong> چرم</p><p><strong>طرح :</strong>ساده</p><p><i><strong>هدیه ای بسیار زیبا و شیک برای آقایان شیک پوش</strong></i></p>",
+      "thumbnail": "63c5b99a45ce977fea40664382f03f04",
+      "galleryImage": "1ec736f242a0d91e975d134563e783f7,8dd4585c55ee44b8a9aa740198b8c03b,b75d554cdb5ed17fe9bd8e34fd0400ee",
+      "createdAt": 1653493189183,
+      "id": 133
+    },
+    {
+      "name": "جاکارتی پرتیز کد pt18-168",
+      "price": "139000",
+      "count": "2",
+      "category": "4",
+      "description": "<ul><li><strong>کیف زنانه&nbsp;:</strong> با استایل روزمره</li><li><strong>جنس :</strong>&nbsp; چرم مصنوعی pu</li><li><strong>طرح :&nbsp;</strong> چرم ساده</li><li><strong>جنس آستر :</strong> پارچه</li><li><strong>مدل و تعداد جیب : </strong>جای کارت</li><li><strong>نحوه بسته شدن کیف:</strong>به وسیله&nbsp; مگنتی</li><li><strong>مدل و تعداد بند :</strong> –</li><li><strong>کاربرد : </strong>روزمره</li></ul>",
+      "thumbnail": "0260a3b8d562b1f2d5b79964c87f6b5c",
+      "galleryImage": "cc84c3ab9ff2778a81b8199ad23a1590,90d640002387654a8715bd93d51a0d3c",
+      "createdAt": 1653493272327,
+      "id": 134
+    },
+    {
+      "name": "ست کیف و کمربند مردانه الکس",
+      "price": "290000",
+      "count": "4",
+      "category": "7",
+      "description": "<p><strong>ست چرمی مردانه:</strong>با استایل روزمره</p><p><strong>اقلام موجود در ست: </strong>کیف پول، کمربند، جاکارتی، جا سوئیچی</p><p><strong>جنس:&nbsp;</strong> چرم مصنوعی</p><p><strong>طرح :</strong>ساده</p><p><i><strong>هدیه ای بسیار زیبا و شیک برای آقایان شیک پوش</strong></i></p>",
+      "thumbnail": "d7f68a4ffd7c643f25ef3c8d8e03424d",
+      "galleryImage": "6a56c65ea28c93426b919967d5c4c923,78f2f57f714592483b56ffc9bc1ed289,567760353e647fc246dc4fe5a95c6ab2,90be44dfa11b76ed9a2ac16a3403beb8",
+      "createdAt": 1653493372103,
+      "id": 135
+    },
+    {
+      "name": "ست کیف و کمربند چرم مردانه ویلیام",
+      "price": "259000",
+      "count": "1",
+      "category": "7",
+      "description": "<p><strong>ست چرمی مردانه:</strong>با استایل روزمره</p><p><strong>اقلام موجود در ست: </strong>کیف پول، کمربند</p><p><strong>جنس:&nbsp;</strong> چرم طبیعی</p><p><strong>طرح :</strong>شرانک</p><p><i><strong>هدیه ای بسیار زیبا و شیک برای آقایان شیک پوش</strong></i></p>",
+      "thumbnail": "c1a8ea4807b24882f490a94c7cf279a8",
+      "galleryImage": "b8a1f4caa0a42910769734e69e48a0b1,be9f47826036ff47da1fe6ebbce4395a,b4c464dfa534bab6ef05f34782ab0040",
+      "createdAt": 1653493484437,
+      "id": 136
+    },
+    {
+      "name": "جاکارتی کریستین",
+      "price": "62000",
+      "count": "4",
+      "category": "4",
+      "description": "<ul><li><strong>جا کارتی :</strong>&nbsp;با استایل روزمره</li><li><strong>جنس :</strong> چرم</li><li><strong>طرح :</strong>ساده</li><li><strong>مدل و تعداد جیب :&nbsp;</strong>&nbsp; 10 خانه جای کارت</li><li><strong>نحوه بسته‌شدن</strong>&nbsp;:زیپ</li></ul>",
+      "thumbnail": "67d5b96c6db6ac8869b541e8bd1b541c",
+      "galleryImage": "b01bfe3034897fd3f0b7d8b244d87132,eff8e3206b83a0f3b4ad3f9516ea4c2d,f523a03ffeb017fb945eb4114fcd3722,91376900a3391bf3ad37432e64b25d79",
+      "createdAt": 1653493702728,
+      "id": 137
     }
   ],
   "category": [
@@ -927,13 +1048,8 @@
   "protection": {
     "products.get": false,
     "products": "admin",
-    "products.post": false,
-    "products.put": false,
-    "products.delete": false,
     "orders.post": false,
-    "upload": false,
     "orders": "admin",
-    "orders.put": false,
     "users": "admin",
     "protection": "admin"
   }
