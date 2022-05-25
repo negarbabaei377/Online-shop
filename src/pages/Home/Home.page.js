@@ -9,6 +9,9 @@ import image1 from 'assets/image/jpg/Group-6.jpg'
 import image2 from 'assets/image/jpg/Group-7.jpg'
 import image3 from 'assets/image/jpg/Group-8.jpg'
 import ScrollToTop from "react-scroll-to-top";
+import {Link} from "react-router-dom";
+import {PATH} from "configs/path.config";
+
 
 export const HomePage = () => {
 
@@ -32,9 +35,9 @@ export const HomePage = () => {
                 <MainSliderComponent/>
             </Container>
             <div className={style.galleryImage}>
-                <div><img src={image1}/></div>
-                <div><img src={image2}/></div>
-                <div><img src={image3}/></div>
+                <div><Link to={PATH.CATEGORIES + '?id=6'}><img src={image1}/></Link></div>
+                <div><Link to={PATH.CATEGORIES + '?id=8'}><img src={image2}/></Link></div>
+                <div><Link to={PATH.CATEGORIES + '?id=9'}><img src={image3}/></Link></div>
             </div>
             <Container>
                 {group1 && group1.map(category => {
@@ -42,7 +45,8 @@ export const HomePage = () => {
                     return (
                         <div key={category.id}>
                             <div className={style.titleStyle}>
-                                <span className={style.title}>{category.name}</span>
+                                <Link to={PATH.CATEGORIES + '?id=' + category.id}
+                                      className={style.title}>{category.name}</Link>
                                 <span className={style.br}></span>
                             </div>
                             <ProductSliderComponent productData={product}/>
@@ -60,13 +64,14 @@ export const HomePage = () => {
                     const product = productData && productData.filter(item => item.category == category.id)
                     return (
                         <div key={category.id}>
-                            <div className={style.titleStyle} >
-                                <span className={style.title}>{category.name}</span>
-                                <span className={style.br}></span>
-                            </div>
-                            <ProductSliderComponent productData={product}/>
+                            <div className={style.titleStyle}>
+                                <Link to={PATH.CATEGORIES + '?id=' + category.id}
+                                      className={style.title}>{category.name}</Link>
+                            <span className={style.br}></span>
                         </div>
-                    )
+                    <ProductSliderComponent productData={product}/>
+                </div>
+                )
                 })}
             </Container>
             <ScrollToTop smooth
