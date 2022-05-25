@@ -7,6 +7,8 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 import image1 from 'assets/image/jpg/Group-1.jpg'
 import image2 from 'assets/image/jpg/Group-2.jpg'
 import './_MainSlider.module.scss'
+import {Link} from "react-router-dom";
+import {PATH} from "configs/path.config";
 
 
 export function MainSliderComponent() {
@@ -28,8 +30,8 @@ export function MainSliderComponent() {
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
             >
-                <SwiperSlide><img src={image1}/> </SwiperSlide>
-                <SwiperSlide><img src={image2}/> </SwiperSlide>
+                <SwiperSlide><Link to={PATH.CATEGORIES + '?id=6'}><img src={image1}/></Link> </SwiperSlide>
+                <SwiperSlide><Link to={PATH.CATEGORIES + '?id=8'}><img src={image2}/></Link> </SwiperSlide>
             </Swiper>
         </>
     );
