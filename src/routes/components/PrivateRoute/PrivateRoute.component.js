@@ -9,7 +9,7 @@ import {UserApi} from "api/user.api";
 const TargetPage = ({Component, Layout, hasLayout}) => {
     const isLogin = JSON.parse(localStorage.getItem(IS_LOGIN))
     if (isLogin !== true) {
-        return <Navigate to={PATH.HOME}/>
+        return <Navigate to={PATH.LOGIN}/>
     }
     UserApi().then(res=>res)
     return (
