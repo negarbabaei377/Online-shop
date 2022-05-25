@@ -46,3 +46,12 @@ export const getSingleProduct = async (id)=>{
         return Promise.reject(error)
     }
 }
+
+export const getProductCategory = async(id , page)=>{
+    try{
+        const response = await http.get(`${PRODUCT}?category=${id}&_page=${page}&_limit=6`)
+        return response
+    }catch(error){
+        return Promise.reject(error)
+    }
+}
