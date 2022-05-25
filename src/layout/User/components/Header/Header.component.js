@@ -34,7 +34,7 @@ export const HeaderComponent = (props) => {
                         <Link style={{backgroundColor: LightTheme.palette.button}}
                               to={PATH.LOGIN}>ورود</Link>
                         <Link style={{backgroundColor: LightTheme.palette.button}}
-                              to={PATH.CATEGORIES}>دسته بندی</Link>
+                              to={PATH.CATEGORIES+'?id=1'}>دسته بندی</Link>
                         <IconButton aria-label="cart"
                                     className={style.cartIcon}
                                     onClick={() => navigate(PATH.CART)}
