@@ -1,0 +1,1 @@
+export {DeleteProductComponent} from './DeleteProduct/DeleteProduct.component'
