@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import style from './_Header.module.scss' ;
 import {Link} from "react-router-dom";
 import {PATH} from "configs/path.config";
@@ -10,6 +10,9 @@ import Badge from '@mui/material/Badge';
 import {styled} from '@mui/material/styles';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import {useNavigate} from "react-router";
+import {ORDER} from "configs/variables.config"
+import {useDispatch, useSelector} from "react-redux";
+import {cartAction} from "../../../../redux/actions/cartAction";
 
 const StyledBadge = styled(Badge)(({theme}) => ({
     '& .MuiBadge-badge': {
@@ -21,7 +24,23 @@ const StyledBadge = styled(Badge)(({theme}) => ({
 }));
 
 export const HeaderComponent = (props) => {
+    const [length , setLength] = useState(0)
     const navigate = useNavigate()
+
+    useEffect(()=>{
+        setLength(JSON.parse(localStorage.getItem(ORDER))?.length)
+    },[])
+
+    const cartLength = useSelector(state=>state.cartState.cart)
+    const dispatch= useDispatch()
+    const getLocal = localStorage.getItem(ORDER) === null ? 0 : JSON.parse(localStorage.getItem(ORDER)).length
+
+    useEffect(()=>{
+        setLength(cartLength)
+        dispatch(cartAction(getLocal))
+    },[cartLength , getLocal])
+
+
     return (
         <div className={style.header}>
             <Container>
@@ -39,9 +58,10 @@ export const HeaderComponent = (props) => {
                                     className={style.cartIcon}
                                     onClick={() => navigate(PATH.CART)}
                         >
-                            <StyledBadge badgeContent={1}
+                            <StyledBadge badgeContent={length}
                                          color="secondary"
                                          className={style.containerIcon}
+                                         sx={{"& .MuiBadge-badge": {fontSize: 15,}}}
                             >
                                 <ShoppingCartIcon className={style.icon}/>
                             </StyledBadge>
