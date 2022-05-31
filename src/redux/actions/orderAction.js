@@ -1,6 +1,6 @@
 import {ORDERS_GET_ORDERS} from "configs/variables.config";
 import {OrdersApi} from "api/orders.api";
-import {ORDERS} from "../../configs/endpoint.config";
+import {ORDERS} from "configs/endpoint.config";
 
 const OrderAction = (data) => ({type: ORDERS_GET_ORDERS, payload: data})
 
