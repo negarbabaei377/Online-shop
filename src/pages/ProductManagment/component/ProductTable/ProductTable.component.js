@@ -16,7 +16,7 @@ import {REACT_APP_BASE_URL} from "configs/variables.config";
 import {EditProductComponent, RemoveProductComponent} from "../index";
 
 const columns = [
-    {id: 'image', label: 'تصویر', width: "10%" , align: 'center'},
+    {id: 'image', label: 'تصویر', width: "10%", align: 'center'},
     {
         id: 'name',
         label: 'نام کالا',
@@ -88,7 +88,7 @@ export function ProductManagementTable() {
                                 <TableCell
                                     key={column.id}
                                     align={column.align}
-                                    style={{fontSize: "1.5rem" , width:column.width}}
+                                    style={{fontSize: "1.5rem", width: column.width}}
                                 >
                                     {column.label}
                                 </TableCell>
@@ -104,7 +104,11 @@ export function ProductManagementTable() {
                                               role="checkbox"
                                               tabIndex={-1}
                                               key={product.id}>
-                                        <TableCell style={{fontSize: "1.3rem" , display:"flex" , justifyContent:"center"}}
+                                        <TableCell style={{
+                                            fontSize: "1.3rem",
+                                            display: "flex",
+                                            justifyContent: "center"
+                                        }}
                                                    align={"center"}>
                                             <div className={style.imageWrapper}>
                                                 <img src={REACT_APP_BASE_URL + "/files/" + product.thumbnail}
@@ -117,11 +121,16 @@ export function ProductManagementTable() {
                                         </TableCell>
                                         <TableCell style={{fontSize: "1.3rem"}}
                                                    align={"center"}>
-                                            {categoryStore.length !==0 && categoryStore.filter((item)=>{
-                                                 return item.id==product.category
+                                            {categoryStore.length !== 0 && categoryStore.filter((item) => {
+                                                return item.id == product.category
                                             })[0].name}
                                         </TableCell>
-                                        <TableCell style={{fontSize: "1.3rem" , display:"flex" , alignItems:"center" , justifyContent:"space-evenly"}}
+                                        <TableCell style={{
+                                            fontSize: "1.3rem",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "space-evenly"
+                                        }}
                                                    align={"center"}>
                                             <RemoveProductComponent id={product.id}/>
                                             <EditProductComponent id={product.id}/>
@@ -157,7 +166,12 @@ export function ProductManagementTable() {
                         fontSize: '1.6rem'
                     }
                 }}
-
+                labelRowsPerPage={"در هر صفحه :"}
+                labelDisplayedRows={
+                    ({ from, to, count }) => {
+                        return '' + from + '-' + to + ' از ' + count
+                    }
+                }
             />
         </Paper>
     );
