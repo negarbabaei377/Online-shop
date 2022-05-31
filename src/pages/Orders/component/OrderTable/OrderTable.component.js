@@ -155,7 +155,12 @@ export function OrderTableComponent(props) {
                         fontSize: '1.6rem'
                     }
                 }}
-
+                labelRowsPerPage={"در هر صفحه :"}
+                labelDisplayedRows={
+                    ({ from, to, count }) => {
+                        return '' + from + '-' + to + ' از ' + count
+                    }
+                }
             />
         </Paper>
     );
