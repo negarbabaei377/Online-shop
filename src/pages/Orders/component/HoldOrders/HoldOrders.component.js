@@ -101,12 +101,8 @@ export function HoldOrdersComponent(props) {
                             <span>{filterOrder.customerDetail.firstName + " " + filterOrder.customerDetail.lastName}</span>
                         </div>
                         <div>
-                            <span>آدرس سفارش دهنده :</span>
-                            <span>i{filterOrder.customerDetail.billingAddress}</span>
-                        </div>
-                        <div>
                             <span>آدرس تحویل گیرنده :</span>
-                            <span>{filterOrder.customerDetail.shippingAddress}</span>
+                            <span>{filterOrder.customerDetail.billingAddress}</span>
                         </div>
                         <div>
                             <span>تلفن :</span>
@@ -124,7 +120,7 @@ export function HoldOrdersComponent(props) {
                     <ModalTableComponent orderStatus={filterOrder.orderStatus} id={filterOrder.id}/>
                     <div className={style.totalPrice}>
                         <span>جمع کل (تومان) :</span>
-                        <span>{new Intl.NumberFormat().format(filterOrder.purchaseTotal)}</span>
+                        <span>{new Intl.NumberFormat().format(filterOrder.totalPrice)}</span>
                     </div>
                 </DialogContent>
                 <DialogActions>

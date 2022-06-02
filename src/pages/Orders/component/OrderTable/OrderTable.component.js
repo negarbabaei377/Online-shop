@@ -40,8 +40,8 @@ const columns = [
     }
 ];
 
-function createData(fullName, purchaseTotal, orderDate, id) {
-    return {fullName, purchaseTotal, orderDate, id};
+function createData(fullName, totalPrice, orderDate, id) {
+    return {fullName, totalPrice, orderDate, id};
 }
 
 export function OrderTableComponent(props) {
@@ -68,7 +68,7 @@ export function OrderTableComponent(props) {
     };
 
     const rows = filterOrder.map(order => {
-        return createData(order.customerDetail.firstName + " " + order.customerDetail.lastName, order.purchaseTotal, order.orderDate, order.id)
+        return createData(order.customerDetail.firstName + " " + order.customerDetail.lastName, order.totalPrice, order.orderDate, order.id)
     })
 
     return (
@@ -114,7 +114,7 @@ export function OrderTableComponent(props) {
                                         </TableCell>
                                         <TableCell style={{fontSize: "1.3rem"}}
                                                    align={"center"}>
-                                            {new Intl.NumberFormat().format(order.purchaseTotal)}
+                                            {new Intl.NumberFormat().format(order.totalPrice)}
                                         </TableCell>
                                         <TableCell style={{fontSize: "1.3rem"}}
                                                    align={"center"}>

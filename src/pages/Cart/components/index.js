@@ -1,1 +1,1 @@
-export {DeleteProductComponent} from './DeleteProduct/DeleteProduct.component'
+export {DeleteProductComponent} from './DeleteProduct/DeleteProduct.component.js'

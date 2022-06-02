@@ -28,15 +28,15 @@ const StyledTableRow = styled(TableRow)(({theme}) => ({
     },
 }));
 
-function createData(name, quantity, price , id , deliveredAt) {
-    return {name, quantity, price , id , deliveredAt};
+function createData(name, count, price , id , deliveredAt) {
+    return {name, count, price , id , deliveredAt};
 }
 
 export function ModalTableComponent(props) {
     const orderData = useSelector(state => state.orderState.orders)
     const filterOrder = orderData.filter(item => item.id === props.id)[0]
     const rows = filterOrder.orderItems && filterOrder.orderItems.map(dataOrder => {
-        return createData(dataOrder.name, dataOrder.quantity, dataOrder.price , dataOrder.id , dataOrder.deliveredAt)
+        return createData(dataOrder.name, dataOrder.count, dataOrder.price , dataOrder.id , dataOrder.deliveredAt)
     }).sort((b , a)=>(b.deliveredAt - a.deliveredAt))
     return (
         <TableContainer component={Paper}
@@ -57,9 +57,9 @@ export function ModalTableComponent(props) {
                                              scope="row">
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align="right">{+row.quantity}</StyledTableCell>
+                            <StyledTableCell align="right">{+row.count}</StyledTableCell>
                             <StyledTableCell align="right">{new Intl.NumberFormat().format(+row.price)}</StyledTableCell>
-                            <StyledTableCell align="right">{new Intl.NumberFormat().format(+row.quantity * +row.price)}</StyledTableCell>
+                            <StyledTableCell align="right">{new Intl.NumberFormat().format(+row.count * +row.price)}</StyledTableCell>
                         </StyledTableRow>
                     ))}
                 </TableBody>
