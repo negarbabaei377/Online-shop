@@ -1,0 +1,15 @@
+.sheet{
+  margin: 12rem 0 ;
+  .result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div{
+      font-size: 2rem;
+      width: 25%;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+}
+
