@@ -1,4 +1,4 @@
-import {ORDERS} from "../configs/endpoint.config";
+import {ORDERS} from "configs/endpoint.config";
 import http from 'service/http.service'
 
 export const OrdersApi = async ()=>{
@@ -18,4 +18,13 @@ export const putOrder = async (id , data)=>{
         return Promise.reject(error)
     }
 
+}
+
+export const postOrder = async (data)=>{
+    try{
+        const response = await http.post(ORDERS , data)
+        return response
+    }catch(error){
+        return Promise.reject(error)
+    }
 }
