@@ -1,6 +1,8 @@
 export const IS_LOGIN = "IS_LOGIN"
 export const TOKEN = "TOKEN"
 export const ORDER = "order"
+export const INFORMATION = "information"
+const ORDERS = "orders"
 export const PRODUCT_GET_PRODUCT = "PRODUCT_GET_PRODUCT" ;
 export const PRODUCT_GET_SINGLE_PRODUCT = "PRODUCT_GET_SINGLE_PRODUCT" ;
 export const PRODUCT_GET_SINGLE_CATEGORY = "PRODUCT_GET_SINGLE_CATEGORY" ;
