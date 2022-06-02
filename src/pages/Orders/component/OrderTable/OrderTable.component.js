@@ -40,8 +40,8 @@ const columns = [
     }
 ];
 
-function createData(fullName, totalPrice, orderDate, id) {
-    return {fullName, totalPrice, orderDate, id};
+function createData(fullName, totalPrice, orderDate, id , deliveredAt) {
+    return {fullName, totalPrice, orderDate, id , deliveredAt};
 }
 
 export function OrderTableComponent(props) {
@@ -68,8 +68,8 @@ export function OrderTableComponent(props) {
     };
 
     const rows = filterOrder.map(order => {
-        return createData(order.customerDetail.firstName + " " + order.customerDetail.lastName, order.totalPrice, order.orderDate, order.id)
-    })
+        return createData(order.customerDetail.firstName + " " + order.customerDetail.lastName, order.totalPrice, order.orderDate, order.id , order.deliveredAt)
+    }).sort((b , a)=>(b.orderDate - a.orderDate))
 
     return (
         <Paper sx={{width: '100%', overflow: 'hidden'}}>
@@ -100,7 +100,7 @@ export function OrderTableComponent(props) {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {rows
+                        {rows.reverse()
                             .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                             .map((order) => {
                                 return (
