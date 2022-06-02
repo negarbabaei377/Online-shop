@@ -14,7 +14,7 @@
     {
       "name": "ساعت مچی اسپریت",
       "price": "149000",
-      "count": "5",
+      "count": 0,
       "category": "10",
       "description": "<h3><strong>ساعت مچی</strong>: اسپریت</h3><ul><li><strong>فرم صفحه </strong>:گرد</li><li><strong>جنس بدنه: </strong>استیل، ضد آب( در حد پاشیدن آب، باران و برف)</li><li><strong>نحوه بسته شدن بند :&nbsp;</strong> سگکی یا کمربندی</li><li><strong>مناسب برای: </strong>مهمانی، روزمره</li></ul>",
       "thumbnail": "7d9b0ca919748d8e2e8ac9499895e4c9",
@@ -122,17 +122,6 @@
       "id": 11
     },
     {
-      "name": "کیف پول بابونه",
-      "price": "120000",
-      "count": "2",
-      "category": "1",
-      "description": "<ul><li><strong>کیف&nbsp; :</strong> با استایل روزمره</li><li><strong>جنس :&nbsp;</strong>چرم مصنوعی</li><li><strong>طرح : </strong>گلدوزی بابونه</li><li><strong>جنس آستر :</strong>چرم</li><li><strong>مدل و تعداد جیب : </strong>جای اسکناس، جای کارت، جای سکه</li><li><strong>مدل و تعداد بند : </strong>دارای بند دستی</li><li><strong>نحوه بسته‌شدن : </strong>به وسیله زیپ</li><li><strong>کاربرد : </strong>روزمره</li></ul>",
-      "thumbnail": "11b65c74602ebef75524e6a1642e62fb",
-      "galleryImage": "f378c591136679b29ac85eb3d074e0c6,775e51e7bd4442b4a8634ad49925572f,06a0f22a5944de87982cabadf279865b,fb6cea1a10e06011aeb045f89444cc10,48f0f36f8f78a586cde64a0a8e34051c,c211b9728b709d65d40e537a4989e28e",
-      "createdAt": 1652868967388,
-      "id": 12
-    },
-    {
       "name": "کیف پول پرتیز ",
       "price": "235000",
       "count": "12",
@@ -168,7 +157,7 @@
     {
       "name": "کیف پول فیگارو",
       "price": "92000",
-      "count": "20",
+      "count": 19,
       "category": "1",
       "description": "<ul><li><strong>کیف&nbsp; :</strong> با استایل روزمره</li><li><strong>جنس :&nbsp;</strong>چرم مصنوعی</li><li><strong>طرح : </strong>ساده با طرح گادوزی شده گربه</li><li><strong>جنس آستر :</strong>چرم</li><li><strong>مدل و تعداد جیب : </strong>دو خانه به وسیله زیپ بسته میشود و یک جا برای اسکناس به همراه جای کارت و جای عکس</li><li><strong>مدل و تعداد بند :</strong>دارای بند دستی</li><li><strong>نحوه بسته‌شدن : </strong>به وسیله دکمه فشاری و زیپ</li><li><strong>کاربرد : </strong>روزمره</li></ul>",
       "thumbnail": "07aa6b84d245fd9e1a091c82db19c5cd",
@@ -658,359 +647,25 @@
   "orders": [
     {
       "customerDetail": {
-        "username": "admin",
-        "firstName": "فاطمه",
-        "lastName": "بابائی",
-        "phone": "09121211211",
-        "billingAddress": "Ahwaz- zeyton",
-        "shippingAddress": "Ahwaz- padad"
-      },
-      "id": 2,
-      "orderNumber": "2122",
-      "orderDate": 1643396897495,
-      "purchaseTotal": "220000",
-      "orderStatus": 1,
-      "delivery": 1643396897495,
-      "deliveredAt": 1652951069359,
-      "orderItems": [
-        {
-          "name": "کیف دوشی میاکو",
-          "thumbnail": "cbef6162db2a036c1914fb723cf605ff",
-          "price": "135000",
-          "quantity": "2"
-        },
-        {
-          "name": "عینک دودی فرانسی",
-          "thumbnail": "4d832dfb8e07c0fe7dcd09f464c6145e",
-          "price": "145000",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "customerDetail": {
-        "username": "admin",
         "firstName": "نگار",
-        "lastName": "بابائی",
-        "phone": "09121211211",
-        "billingAddress": "Ahwaz- zeyton",
-        "shippingAddress": "Ahwaz- padad"
+        "lastName": "بابایی",
+        "phone": "09160935474",
+        "billingAddress": "hijhgfvdc"
       },
-      "id": 3,
-      "orderNumber": "2122",
-      "orderDate": 1643396897495,
-      "purchaseTotal": "220000",
+      "orderDate": 1654171386830,
+      "totalPrice": 240000,
       "orderStatus": 1,
-      "delivery": 1643396897495,
-      "deliveredAt": 1652951176443,
+      "delivery": 1654430578000,
+      "deliveredAt": 1654173217110,
       "orderItems": [
         {
-          "name": "کیف دوشی میاکو",
-          "thumbnail": "cbef6162db2a036c1914fb723cf605ff",
-          "price": "135000",
-          "quantity": "2"
+          "count": 2,
+          "name": "کیف پول بابونه",
+          "price": "120000"
         }
-      ]
-    },
-    {
-      "customerDetail": {
-        "username": "admin",
-        "firstName": "نگار",
-        "lastName": "بابائی",
-        "phone": "09121211211",
-        "billingAddress": "Ahwaz- zeyton",
-        "shippingAddress": "Ahwaz- padad"
-      },
-      "id": 4,
-      "orderNumber": "2122",
-      "orderDate": 1643396897495,
-      "purchaseTotal": "220000",
-      "orderStatus": 5,
-      "delivery": 1643396897495,
-      "deliveredAt": null,
-      "orderItems": [
-        {
-          "name": "کیف دوشی میاکو",
-          "thumbnail": "cbef6162db2a036c1914fb723cf605ff",
-          "price": "135000",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "customerDetail": {
-        "username": "admin",
-        "firstName": "نگار",
-        "lastName": "بابائی",
-        "phone": "09121211211",
-        "billingAddress": "Ahwaz- zeyton",
-        "shippingAddress": "Ahwaz- padad"
-      },
-      "id": 5,
-      "orderNumber": "2122",
-      "orderDate": 1643396897495,
-      "purchaseTotal": "220000",
-      "orderStatus": 1,
-      "delivery": 1643396897495,
-      "deliveredAt": 1652949017756,
-      "orderItems": [
-        {
-          "name": "کیف دوشی میاکو",
-          "thumbnail": "cbef6162db2a036c1914fb723cf605ff",
-          "price": "135000",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "customerDetail": {
-        "username": "admin",
-        "firstName": "نگار",
-        "lastName": "بابائی",
-        "phone": "09121211211",
-        "billingAddress": "Ahwaz- zeyton",
-        "shippingAddress": "Ahwaz- padad"
-      },
-      "id": 6,
-      "orderNumber": "2122",
-      "orderDate": 1643396897495,
-      "purchaseTotal": "220000",
-      "orderStatus": 1,
-      "delivery": 1643396897495,
-      "deliveredAt": 1652958981333,
-      "orderItems": [
-        {
-          "name": "کیف دوشی میاکو",
-          "thumbnail": "cbef6162db2a036c1914fb723cf605ff",
-          "price": "135000",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "customerDetail": {
-        "username": "admin",
-        "firstName": "نگار",
-        "lastName": "بابائی",
-        "phone": "09121211211",
-        "billingAddress": "Ahwaz- zeyton",
-        "shippingAddress": "Ahwaz- padad"
-      },
-      "id": 7,
-      "orderNumber": "2122",
-      "orderDate": 1643396897495,
-      "purchaseTotal": "220000",
-      "orderStatus": 1,
-      "delivery": 1643396897495,
-      "deliveredAt": 1646222643757,
-      "orderItems": [
-        {
-          "name": "کیف دوشی میاکو",
-          "thumbnail": "cbef6162db2a036c1914fb723cf605ff",
-          "price": "135000",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "customerDetail": {
-        "username": "admin",
-        "firstName": "نگار",
-        "lastName": "بابائی",
-        "phone": "09121211211",
-        "billingAddress": "Ahwaz- zeyton",
-        "shippingAddress": "Ahwaz- padad"
-      },
-      "id": 8,
-      "orderNumber": "2122",
-      "orderDate": 1643396897495,
-      "purchaseTotal": "220000",
-      "orderStatus": 1,
-      "delivery": 1643396897495,
-      "deliveredAt": 1646222643757,
-      "orderItems": [
-        {
-          "name": "کیف دوشی میاکو",
-          "thumbnail": "cbef6162db2a036c1914fb723cf605ff",
-          "price": "135000",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "customerDetail": {
-        "username": "admin",
-        "firstName": "نگار",
-        "lastName": "بابائی",
-        "phone": "09121211211",
-        "billingAddress": "Ahwaz- zeyton",
-        "shippingAddress": "Ahwaz- padad"
-      },
-      "id": 9,
-      "orderNumber": "2122",
-      "orderDate": 1643396897495,
-      "purchaseTotal": "220000",
-      "orderStatus": 1,
-      "delivery": 1643396897495,
-      "deliveredAt": 1646222643757,
-      "orderItems": [
-        {
-          "name": "کیف دوشی میاکو",
-          "thumbnail": "cbef6162db2a036c1914fb723cf605ff",
-          "price": "135000",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "customerDetail": {
-        "username": "admin",
-        "firstName": "نگار",
-        "lastName": "بابائی",
-        "phone": "09121211211",
-        "billingAddress": "Ahwaz- zeyton",
-        "shippingAddress": "Ahwaz- padad"
-      },
-      "id": 10,
-      "orderNumber": "2122",
-      "orderDate": 1643396897495,
-      "purchaseTotal": "220000",
-      "orderStatus": 1,
-      "delivery": 1643396897495,
-      "deliveredAt": 1646222643757,
-      "orderItems": [
-        {
-          "name": "کیف دوشی میاکو",
-          "thumbnail": "cbef6162db2a036c1914fb723cf605ff",
-          "price": "135000",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "customerDetail": {
-        "username": "admin",
-        "firstName": "نگار",
-        "lastName": "بابائی",
-        "phone": "09121211211",
-        "billingAddress": "Ahwaz- zeyton",
-        "shippingAddress": "Ahwaz- padad"
-      },
-      "id": 11,
-      "orderNumber": "2122",
-      "orderDate": 1643396897495,
-      "purchaseTotal": "220000",
-      "orderStatus": 1,
-      "delivery": 1643396897495,
-      "deliveredAt": 1646222643757,
-      "orderItems": [
-        {
-          "name": "کیف دوشی میاکو",
-          "thumbnail": "cbef6162db2a036c1914fb723cf605ff",
-          "price": "135000",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "customerDetail": {
-        "username": "admin",
-        "firstName": "نگار",
-        "lastName": "بابائی",
-        "phone": "09121211211",
-        "billingAddress": "Ahwaz- zeyton",
-        "shippingAddress": "Ahwaz- padad"
-      },
-      "id": 12,
-      "orderNumber": "2122",
-      "orderDate": 1643396897495,
-      "purchaseTotal": "220000",
-      "orderStatus": 1,
-      "delivery": 1643396897495,
-      "deliveredAt": 1646222643757,
-      "orderItems": [
-        {
-          "name": "کیف دوشی میاکو",
-          "thumbnail": "cbef6162db2a036c1914fb723cf605ff",
-          "price": "135000",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "customerDetail": {
-        "username": "admin",
-        "firstName": "نگار",
-        "lastName": "بابائی",
-        "phone": "09121211211",
-        "billingAddress": "Ahwaz- zeyton",
-        "shippingAddress": "Ahwaz- padad"
-      },
-      "id": 13,
-      "orderNumber": "2122",
-      "orderDate": 1643396897495,
-      "purchaseTotal": "220000",
-      "orderStatus": 1,
-      "delivery": 1643396897495,
-      "deliveredAt": 1646222643757,
-      "orderItems": [
-        {
-          "name": "کیف دوشی میاکو",
-          "thumbnail": "cbef6162db2a036c1914fb723cf605ff",
-          "price": "135000",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "customerDetail": {
-        "username": "admin",
-        "firstName": "نگار",
-        "lastName": "بابائی",
-        "phone": "09121211211",
-        "billingAddress": "Ahwaz- zeyton",
-        "shippingAddress": "Ahwaz- padad"
-      },
-      "id": 14,
-      "orderNumber": "2122",
-      "orderDate": 1643396897495,
-      "purchaseTotal": "220000",
-      "orderStatus": 1,
-      "delivery": 1643396897495,
-      "deliveredAt": 1646222643757,
-      "orderItems": [
-        {
-          "name": "کیف دوشی میاکو",
-          "thumbnail": "cbef6162db2a036c1914fb723cf605ff",
-          "price": "135000",
-          "quantity": "2"
-        }
-      ]
-    },
-    {
-      "customerDetail": {
-        "username": "admin",
-        "firstName": "نگار",
-        "lastName": "بابائی",
-        "phone": "09121211211",
-        "billingAddress": "Ahwaz- zeyton",
-        "shippingAddress": "Ahwaz- padad"
-      },
-      "id": 15,
-      "orderNumber": "2122",
-      "orderDate": 1643396897495,
-      "purchaseTotal": "220000",
-      "orderStatus": 1,
-      "delivery": 1643396897495,
-      "deliveredAt": 1646222643757,
-      "orderItems": [
-        {
-          "name": "کیف دوشی میاکو",
-          "thumbnail": "cbef6162db2a036c1914fb723cf605ff",
-          "price": "135000",
-          "quantity": "2"
-        }
-      ]
+      ],
+      "createdAt": 1654171386893,
+      "id": 19
     }
   ],
   "orderStatus": [
