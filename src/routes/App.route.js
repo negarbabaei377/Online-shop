@@ -14,6 +14,7 @@ export const AppRoute = () => {
                 <Route path={PATH.CART} element={<PublicRoute Component={Pages.CartPage}/>} />
                 <Route path={PATH.CATEGORIES} element={<PublicRoute Component={Pages.CategoryPage}/>} />
                 <Route path={PATH.CHECKOUT} element={<PublicRoute Component={Pages.CheckoutPage}/>} />
+                <Route path={PATH.PAYMENT} element={<PublicRoute Component={Pages.PaymentPage}/>} />
                 <Route path={PATH.DASHBOARD} element={<PrivateRoute Component={Pages.DashboardPage} Layout={"Admin"}/>} >
                     <Route path={PATH.ORDERS} element={<PrivateRoute Component={Pages.OrdersPage} Layout={"Admin"} hasLayout={false}/>} />
                     <Route path={PATH.PRICEQUANTITY} element={<PrivateRoute Component={Pages.PriceQuantityPage} Layout={"Admin"} hasLayout={false}/>} />

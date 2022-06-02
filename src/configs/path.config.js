@@ -9,5 +9,6 @@ export const PATH = {
     CHECKOUT : "/checkout" ,
     ORDERS : "orders" ,
     PRODUCTMANAGMENT : "product-managment" ,
-    PRICEQUANTITY : "price-quantity"
+    PRICEQUANTITY : "price-quantity",
+    PAYMENT : "/payment"
 }
