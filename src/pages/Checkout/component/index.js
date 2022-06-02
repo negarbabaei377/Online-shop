@@ -1,0 +1,1 @@
+export {CheckoutTableComponent} from './checkoutTable/checkoutTable.component'
