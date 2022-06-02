@@ -1,0 +1,62 @@
+.outer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .wrapper {
+    box-shadow: 0 0 16px 0 rgb(195 195 195 / 74%);
+    padding: 4rem;
+    width: 48%;
+
+    .title {
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+    .field{
+      margin-bottom: 1rem;
+    }
+    .date{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 3rem 0 ;
+      span{
+        font-size: 1.3rem;
+        margin-left: 1rem;
+      }
+    }
+    .payButton{
+      background-color:rgba(151, 137, 255, 0.69);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      box-shadow: 0 0 16px 0 rgb(195 195 195 / 74%);
+      border-radius: 5px;
+      width: 10rem;
+      height: 3.5rem;
+      margin: 5rem 18rem 0 0;
+      transition: 0.5s;
+      cursor: pointer;
+      border: none;
+
+      &:hover{
+        background-color:#d7d2f9a1 !important;
+        border:1px solid #9789ff !important;
+      }
+
+    }
+  }
+  Backdrop{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    div{
+      font-size: 1.5rem !important;
+    }
+  }
+}
+
+
+
