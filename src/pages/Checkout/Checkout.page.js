@@ -15,7 +15,7 @@ import {CheckoutTableComponent} from "./component";
 import {toast} from "react-toastify";
 import {ORDER} from "configs/variables.config";
 import {useSelector} from "react-redux";
-import {ORDERS} from "../../configs/endpoint.config";
+import {ORDERS} from "configs/variables.config";
 
 
 const weekDays = ["ش", "ی", "د", "س", "چ", "پ", "ج"]
@@ -74,7 +74,7 @@ export const CheckoutPage = (props) => {
                 customerDetail : customerDetail,
                 orderDate:null ,
                 totalPrice : total,
-                orderStatus : 1 ,
+                orderStatus : 5 ,
                 delivery : new DateObject(date).unix*1000,
                 deliveredAt:null,
                 orderItems : productData
@@ -108,7 +108,7 @@ export const CheckoutPage = (props) => {
         <Container>
             <Backdrop
                 sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 9999}}
-                style={{display:"flex" , flexDirection:"column"}}
+                style={{display:"flex" , flexDirection:"column" , zIndex:"100"}}
                 open={open}
                 onClick={handleClose}
             >
