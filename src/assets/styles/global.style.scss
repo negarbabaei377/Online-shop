@@ -52,4 +52,7 @@ color: var(--swiper-navigation-color,var(--swiper-theme-color));
   }
 }
 
+.MuiBackdrop-root{
+  z-index: 999 !important;
+}
 
