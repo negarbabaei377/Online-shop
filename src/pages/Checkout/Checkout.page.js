@@ -22,7 +22,7 @@ const weekDays = ["ش", "ی", "د", "س", "چ", "پ", "ج"]
 export const CheckoutPage = (props) => {
     const [open, setOpen] = React.useState(false);
     const [date, setDate] = useState()
-    const [data , setData] = useState()
+    const [data, setData] = useState()
 
     const handleClose = () => {
         setOpen(false);
@@ -31,9 +31,9 @@ export const CheckoutPage = (props) => {
         setOpen(!open);
     };
 
-    useEffect(()=>{
+    useEffect(() => {
         setData(JSON.parse(localStorage.getItem(ORDER)))
-    },[])
+    }, [])
 
     const productStore = useSelector(state => state.productState).product
     const productData = data?.map((item) => {
@@ -62,31 +62,31 @@ export const CheckoutPage = (props) => {
     })
 
     const onSubmit = (values) => {
-        setOpen(true)
-        setTimeout(()=>{
-            const customerDetail = {
-                firstName : values.firstName ,
-                lastName : values.lastName ,
-                phone : values.phone ,
-                billingAddress : values.billingAddress
-            }
-            const orders ={
-                customerDetail : customerDetail,
-                orderDate:null ,
-                totalPrice : total,
-                orderStatus : 5 ,
-                delivery : new DateObject(date).unix*1000,
-                deliveredAt:null,
-                orderItems : productData
-            }
-            if (orders.delivery == "undefined") {
-                toast.error("زمان تحویل سفارش خود را انتخاب کنید !")
-            } else {
+        const customerDetail = {
+            firstName: values.firstName,
+            lastName: values.lastName,
+            phone: values.phone,
+            billingAddress: values.billingAddress
+        }
+        const orders = {
+            customerDetail: customerDetail,
+            orderDate: null,
+            totalPrice: total,
+            orderStatus: 5,
+            delivery: new DateObject(date).unix * 1000,
+            deliveredAt: null,
+            orderItems: productData
+        }
+        if (date === undefined) {
+            toast.error("زمان تحویل سفارش خود را انتخاب کنید !")
+        } else {
+            setOpen(true)
+            setTimeout(() => {
                 localStorage.setItem(ORDERS, JSON.stringify(orders))
-                window.location.href =`http://localhost:63342/project/project/public/shaparak/shaparak.html?name=${values.firstName + " " +values.lastName}&totalPrice=${total}`
+                window.location.href = `http://localhost:63342/project/project/public/shaparak/shaparak.html?name=${values.firstName + " " + values.lastName}&totalPrice=${total}`
                 setOpen(false)
-            }
-        },3000)
+            }, 3000)
+        }
     }
 
     const formik = useFormik({
@@ -107,13 +107,13 @@ export const CheckoutPage = (props) => {
     return (
         <Container>
             <Backdrop
-                sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 9999}}
-                style={{display:"flex" , flexDirection:"column" , zIndex:"100"}}
+                sx={{color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 9999}}
+                style={{display: "flex", flexDirection: "column", zIndex: "100"}}
                 open={open}
                 onClick={handleClose}
             >
-                <CircularProgress style={{color: '#fff'}} />
-                <div style={{fontSize:"2rem" , marginTop:"1rem" , color: '#fff'}}>در حال اتصال به درگاه بانکی</div>
+                <CircularProgress style={{color: '#fff'}}/>
+                <div style={{fontSize: "2rem", marginTop: "1rem", color: '#fff'}}>در حال اتصال به درگاه بانکی</div>
             </Backdrop>
             <div className={style.outer}>
                 <div className={style.wrapper}>
@@ -258,8 +258,8 @@ export const CheckoutPage = (props) => {
                         </div>
                     </form>
                     <button type="submit"
-                          className={style.payButton}
-                          onClick={formik.handleSubmit}
+                            className={style.payButton}
+                            onClick={formik.handleSubmit}
                     >پرداخت
                     </button>
                 </div>
